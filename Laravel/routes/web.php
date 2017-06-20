@@ -20,6 +20,24 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+
+
+/*Route::get('about', function()
+{
+    return View::make('about');
+});
+Route::get('projects', function()
+{
+    return View::make('projects');
+});*/
+Route::get('contact', function()
+{
+    return View::make('contact');
+});
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
